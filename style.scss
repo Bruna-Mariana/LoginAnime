@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Comic+Relief:wght@400;700&display=swap');
+
+body {
+    background-image: url(fundo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    display: flex;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem {
+    width: 20vw;
+    height: 45vh;
+    background-color: rgb(195, 226, 253, 0.6);
+    border-end-start-radius: 25px;
+    border-start-start-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 20vw;
+    height: auto;
+}
+
+.formulario {
+    width: 25vw;
+    height: 45vh;
+    background-color: rgb(195, 226, 253, 0.6);
+    padding: 5px;
+    border-end-end-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+h1 {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 525;
+    font-style: bold;
+    font-size: 2.1rem;
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+}
+
+p {
+    font-family: "Comic Neue", cursive;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 1.2rem;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.cadastro {
+    padding-top: 2px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+form input,
+form button {
+    outline: unset;
+    padding: 10px;
+    width: 90%;
+    border: 3px solid rgb(254, 144, 47);
+    border-radius: 15px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 0.9rem;
+}
+
+form button {
+    background-color: rgb(254, 144, 47);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+form label {
+    margin-left: 10px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 900;
+    font-style: bold;
+    font-size: 1.3rem;
+    background-color: rgb(254, 144, 47);
+    width: 65px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    height: 5vh;
+    text-align: center;
+    color: white;
+}
+
+.pfooter {
+    font-size: 1rem;
+}
+
+
+// RESPONSIVIDADE //
+@media(min-width:600px) and (max-width:1000px) {
+    .formulario {
+        width: 40vw;
+        text-align: center;
+    }
+
+    form div {
+        align-items: center;
+    }
+
+    form label {
+        align-self: flex-start;
+        margin-left: 7%;
+    }
+}
+
+@media(max-width:600px) {
+    .imagem {
+        display: none;
+    }
+
+    body {
+        background-size: auto;
+    }
+
+    .formulario {
+        width: 80vw;
+        height: auto;
+        border-radius: 5%;
+        text-align: center;
+    }
+
+    form div {
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    form label {
+        align-self: flex-start;
+        margin-left: 25px;
+    }
+}
+
+@media(max-width:200px) {
+    body {
+        background-size: auto;
+    }
+
+    main {
+        height: auto;
+        width: auto;
+    }
+
+    form div {
+        align-items: center;
+    }
+
+    footer {
+        display: none;
+    }
+}

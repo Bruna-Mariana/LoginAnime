@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="Logo.png" />
+</head>
+
+<body>
+    <main>
+        <section class="imagem">
+            <img src="lapis.png" alt="A imagem da personagem Haruhi Suzumiya segurando um lápis.">
+        </section>
+        <section class="formulario">
+            <h1>Bem-vindo!</h1>
+            <p>Entre com seus dados para continuar:</p>
+
+            <form>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu email" required
+                        oninvalid="this.setCustomValidity('Esqueceu de preencher aqui! (＞﹏＜)')"
+                        onchange="try{setCustomValidity('')}catch(e){}">
+                </div>
+
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <div>
+                    <button type="submit">Entrar</button>
+                </div>
+
+                <p class="cadastro">Ainda não tem conta? <a href="#">Cadastre-se</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="pfooter">Projeto construído para fins didáticos. 2025 - Bruna Mariana - Todos os direitos reservados.
+        </p>
+    </footer>
+</body>
+
+</html>
